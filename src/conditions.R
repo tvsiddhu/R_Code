@@ -4,7 +4,7 @@
 # Created on: 14/Jun/20
 
 #resetting the variable value
-# rm(random_variable)
+ rm(random_variable)
 
 #creating the random variable
 random_variable <- rnorm(1)
