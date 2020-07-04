@@ -167,3 +167,16 @@ merged$Country <- NULL
 summary(merged)
 str(merged)
 tail(merged)
+
+#----------------------Visualizing data frames
+
+qplot(data = merged, x = Internet.users, y = Birth.rate, size = I(3), colour = Region)
+
+#changing shapes
+qplot(data = merged, x = Internet.users, y = Birth.rate, size = I(3), colour = Region, shape = I(23))
+
+#changing transparency. adjust alpha from 0 (transparent) to 1 (Opaque)
+qplot(data = merged, x = Internet.users, y = Birth.rate, size = I(3), colour = Region, alpha = I(0.6))
+
+#adding a title to the graph
+qplot(data = merged, x = Internet.users, y = Birth.rate, size = I(3), colour = Region, alpha = I(0.5), main = "Birth rate / Internet Users")
